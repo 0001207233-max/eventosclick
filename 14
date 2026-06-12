@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soltou o controle</title>
+</head>
+<body>
+  <button onmouseup="mensagem()">
+    Clique aqui!
+  </button>
+<script src="script.js"></script>
+
+</body>
+</html>
+<!--JavaScript-->
+function mensagem(){
+    alert("Ah não. Você soltou o mouse!")
+}
