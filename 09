@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão Explosivo</title>
+</head>
+<body>
+  <button onclick="mensagem()">
+    Cuidado!
+  </button>
+<script src="script.js"></script>
+
+</body>
+</html>
+
+<!--Javascript-->
+function mensagem(){
+    alert("BOOM! você foi surpreendido!")
+}
