@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão Gamer</title>
+</head>
+<body>
+  <button ondblclick="mensagem()">
+    Clique aqui!
+  </button>
+<script src="script.js"></script>
+
+</body>
+</html>
+
+<!--Java Script-->
+function mensagem(){
+    alert("Modo gamer ativado!")
+}
