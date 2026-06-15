@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Operações</title>
+</head>
+<body>
+
+    <h1>Central de Operações</h1>
+
+    <button onclick="saudacao()">Clique aqui</button>
+    <button ondblclick="mensagem()">Clique aqui</button>
+
+    <script>
+        function saudacao() {
+            alert("Olá! Bem-vindo à Central de Operações!");
+        }
+
+        function mensagem() {
+            alert("Clique duplo detectado!");
+        }
+    </script>
+
+</body>
+</html>
