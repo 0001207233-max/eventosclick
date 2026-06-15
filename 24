@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Simples</title>
+</head>
+<body>
+
+    <h1>Cadastro Simples</h1>
+
+    <button onclick="adicionarNome()">Adicionar Nome</button>
+    <button onclick="mostrarNomes()">Mostrar Nomes</button>
+    <button onclick="contarNomes()">Contar Nomes</button>
+
+    <script>
+        // Lista para armazenar os nomes
+        let nomes = [];
+
+        function adicionarNome() {
+            let nome = prompt("Digite um nome:");
+
+            if (nome && nome.trim() !== "") {
+                nomes.push(nome);
+                alert("Nome cadastrado com sucesso!");
+            } else {
+                alert("Nome inválido.");
+            }
+        }
+
+        function mostrarNomes() {
+            if (nomes.length === 0) {
+                alert("Nenhum nome cadastrado.");
+            } else {
+                alert("Nomes cadastrados:\n" + nomes.join("\n"));
+            }
+        }
+
+        function contarNomes() {
+            alert("Quantidade de nomes cadastrados: " + nomes.length);
+        }
+    </script>
+
+</body>
+</html>
