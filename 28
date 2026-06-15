@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo dos Botões</title>
+</head>
+<body>
+
+    <h1>Jogo dos Botões</h1>
+
+    <button onclick="botaoVermelho()" style="background-color: red; color: white;">
+        Botão Vermelho
+    </button>
+
+    <button onclick="botaoAzul()" style="background-color: blue; color: white;">
+        Botão Azul
+    </button>
+
+    <button onclick="botaoVerde()" style="background-color: green; color: white;">
+        Botão Verde
+    </button>
+
+    <script>
+        function botaoVermelho() {
+            alert("Você perdeu 10 pontos!");
+        }
+
+        function botaoAzul() {
+            alert("Você ganhou 50 pontos!");
+        }
+
+        function botaoVerde() {
+            alert("Bônus surpresa!");
+        }
+    </script>
+
+</body>
+</html>
