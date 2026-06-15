@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Notas</title>
+</head>
+<body>
+
+    <h1>Controle de Notas</h1>
+
+    <button onclick="adicionarNota()">Adicionar Nota</button>
+    <button onclick="calcularMedia()">Calcular Média</button>
+    <button onclick="mostrarMaiorNota()">Mostrar Maior Nota</button>
+
+    <script>
+        // Vetor para armazenar as notas
+        let notas = [];
+
+        function adicionarNota() {
+            let nota = parseFloat(prompt("Digite uma nota:"));
+
+            if (!isNaN(nota)) {
+                notas.push(nota);
+                alert("Nota adicionada com sucesso!");
+            } else {
+                alert("Valor inválido.");
+            }
+        }
+
+        function calcularMedia() {
+            if (notas.length === 0) {
+                alert("Nenhuma nota cadastrada.");
+                return;
+            }
+
+            let soma = 0;
+
+            for (let i = 0; i < notas.length; i++) {
+                soma += notas[i];
+            }
+
+            let media = soma / notas.length;
+
+            alert("Média das notas: " + media.toFixed(2));
+        }
+
+        function mostrarMaiorNota() {
+            if (notas.length === 0) {
+                alert("Nenhuma nota cadastrada.");
+                return;
+            }
+
+            let maior = notas[0];
+
+            for (let i = 1; i < notas.length; i++) {
+                if (notas[i] > maior) {
+                    maior = notas[i];
+                }
+            }
+
+            alert("Maior nota: " + maior);
+        }
+    </script>
+
+</body>
+</html>
