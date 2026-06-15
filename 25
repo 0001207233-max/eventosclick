@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Números</title>
+</head>
+<body>
+
+    <h1>Lista de Números</h1>
+
+    <button onclick="adicionarNumero()">Adicionar Número</button>
+    <button onclick="mostrarVetor()">Mostrar Vetor</button>
+    <button onclick="mostrarSoma()">Mostrar Soma</button>
+
+    <script>
+        // Vetor para armazenar os números
+        let numeros = [];
+
+        function adicionarNumero() {
+            let numero = parseFloat(prompt("Digite um número:"));
+
+            if (!isNaN(numero)) {
+                numeros.push(numero);
+                alert("Número adicionado com sucesso!");
+            } else {
+                alert("Valor inválido.");
+            }
+        }
+
+        function mostrarVetor() {
+            if (numeros.length === 0) {
+                alert("Nenhum número cadastrado.");
+            } else {
+                alert("Números armazenados:\n" + numeros.join("\n"));
+            }
+        }
+
+        function mostrarSoma() {
+            let soma = 0;
+
+            for (let i = 0; i < numeros.length; i++) {
+                soma += numeros[i];
+            }
+
+            alert("Soma dos números: " + soma);
+        }
+    </script>
+
+</body>
+</html>
